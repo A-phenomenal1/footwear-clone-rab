@@ -1,4 +1,8 @@
 import React from "react";
+
+import SearchIcon from "@mui/icons-material/Search";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+
 import "./Navbar.css";
 
 function Navbar() {
@@ -8,11 +12,35 @@ function Navbar() {
         <div className="nav-title">
           <h1>Footwear</h1>
         </div>
-        <div className="nav-searchbar"></div>
+        <div className="nav-searchbar">
+          <input value="" placeholder="Search" />
+          <div className="nav-searchicon-cont">
+            <SearchIcon />
+          </div>
+        </div>
       </div>
       <div className="nav-bottombar">
-        <div className="nav-menuitems"></div>
-        <div className="nav-cartitems"></div>
+        <ul>
+          <li className="nav-item">
+            <a>Home</a>
+          </li>
+          <li className="nav-item">
+            <a>Men</a>
+          </li>
+          <li className="nav-item">
+            <a>Women</a>
+          </li>
+          <li className="nav-item">
+            <a>About</a>
+          </li>
+          <li className="nav-item">
+            <a>Contact</a>
+          </li>
+        </ul>
+        <div className="nav-cartitems">
+          <ShoppingCartIcon />
+          <span>Cart [0]</span>
+        </div>
       </div>
     </div>
   );
