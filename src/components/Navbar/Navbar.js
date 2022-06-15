@@ -1,11 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 import "./Navbar.css";
 
-function Navbar() {
+export function SubNavbar() {
+  const [count, setCount] = useState(0);
+  console.log("SubNavBar Component rerender.");
+
+  const Taglines = [
+    "25% off (Almost) Everything use! use code summer shoes",
+    "Our Biggest sale is yet 50% off all summer shoes",
+  ];
+
+  const increaseCount = () => {
+    let a = count + 1;
+    setCount(a);
+  };
+
+  return (
+    <div className="sn-container">
+      <div className="sn-text">
+        <h1>{Taglines[0]}</h1>
+      </div>
+      <h2>{count}</h2>
+      <button onClick={increaseCount}>Increase</button>
+    </div>
+  );
+}
+
+export function Navbar() {
   return (
     <div className="nav-header">
       <div className="nav-topbar">
@@ -45,5 +70,3 @@ function Navbar() {
     </div>
   );
 }
-
-export default Navbar;

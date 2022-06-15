@@ -6,6 +6,7 @@ function Home() {
   return (
     <div>
       <Components.Navbar />
+      <Components.SubNavbar />
     </div>
   );
 }
