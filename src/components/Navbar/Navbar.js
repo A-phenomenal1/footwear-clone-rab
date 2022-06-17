@@ -9,6 +9,15 @@ export function SubNavbar() {
   const [count, setCount] = useState(0);
   console.log("SubNavBar Component rerender.");
 
+  useEffect(() => {
+    let interval = setInterval(() => {
+      setCount((prev) => prev + 1);
+    }, 1000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [count]);
+
   const Taglines = [
     "25% off (Almost) Everything use! use code summer shoes",
     "Our Biggest sale is yet 50% off all summer shoes",
