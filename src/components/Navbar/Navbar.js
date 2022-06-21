@@ -37,9 +37,10 @@ export function SubNavbar() {
 }
 
 export function Navbar() {
-  const [searchText, setSearchText] = useState("abc");
+  // const [searchText, setSearchText] = useState("abc");
 
-  const ref = useRef(0);
+  const searchText = useRef("");
+  console.log("searchText: ", searchText);
 
   return (
     <div className="nav-header">
@@ -49,11 +50,8 @@ export function Navbar() {
         </div>
         <div className="nav-searchbar">
           <input
-            value={searchText}
-            onChange={(e) => {
-              // console.log(e.target.value);
-              setSearchText(e.target.value);
-            }}
+            value={searchText.Current}
+            onChange={(e) => (searchText.Current = e.target.value)}
             placeholder="Search"
           />
           <div className="nav-searchicon-cont">

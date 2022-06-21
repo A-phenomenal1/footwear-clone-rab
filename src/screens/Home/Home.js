@@ -7,6 +7,7 @@ function Home() {
     <div>
       <Components.Navbar />
       <Components.SubNavbar />
+      <Components.Carousel />
     </div>
   );
 }
