@@ -34,10 +34,10 @@ function Carousel() {
   ];
   return (
     <CarouselItem
+      autoPlay={true}
       showThumbs={false}
       showStatus={false}
       infiniteLoop={true}
-      // autoPlay={true}
     >
       {carouselItems.map((item, i) => {
         return (

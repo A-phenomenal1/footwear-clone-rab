@@ -2,8 +2,8 @@
   display: flex;
   opacity: 1;
   width: 100%;
-  height: 300px;
-  min-height: 500px;
+  /* height: 400px; */
+  min-height: 550px;
   overflow: hidden;
   align-items: center;
   flex-direction: column;
@@ -12,22 +12,18 @@
 }
 
 .cr-container > img {
-  height: 80vh;
+  height: 100vh;
   filter: grayscale(50%);
 }
 
 .cr-content {
   display: flex;
-  top: 0;
   width: auto;
-  height: 70vh;
-  margin: 0 auto;
-  color: #ebe9e9;
+  color: #ffffff;
   position: absolute;
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid red;
 }
 
 .cr-content > h1 {
@@ -54,16 +50,18 @@
 }
 .cr-content > button {
   display: flex;
-  width: 250px;
-  height: 60px;
+  width: 320px;
+  height: 70px;
   border: none;
   cursor: pointer;
   font-size: 18px;
   color: #ffffff;
   align-items: center;
+  letter-spacing: 2px;
   border-radius: 1000px;
   justify-content: center;
-  background-color: grey;
+  text-transform: uppercase;
+  background-color: #616161;
 }
 
 .cr-content > button:focus {
@@ -71,7 +69,7 @@
 }
 
 .carousel-slider {
-  height: 70vh;
+  height: 85vh;
 }
 
 .slider-wrapper {
