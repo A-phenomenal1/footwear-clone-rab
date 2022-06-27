@@ -1,14 +1,11 @@
 import React from "react";
 import "./Card.css";
 
-function Card() {
+function Card(props) {
   return (
     <div className="card-cont">
       <div className="card-img">
-        <img
-          src="https://technext.github.io/footwear/images/item-1.jpg"
-          alt=" card-img"
-        />
+        <img src={props.item.img} alt=" card-img" />
       </div>
       <div className="card-info-cont">
         <h2>Women's boots shoes </h2>

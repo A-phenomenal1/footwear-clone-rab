@@ -1,6 +1,7 @@
 import React from "react";
 
 import Components from "../../components";
+import items from "../../assets/items";
 import "./Home.css";
 
 function Home() {
@@ -25,11 +26,9 @@ function Home() {
       <div className="prod-cont">
         <h1>Best Sellers</h1>
         <div className="prod-items">
-          <Components.Card />
-          <Components.Card />
-          <Components.Card />
-          <Components.Card />
-          <Components.Card />
+          {items.map((item, i) => {
+            return <Components.Card item={item} key={i} />;
+          })}
         </div>
       </div>
     </div>

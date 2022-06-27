@@ -28,13 +28,15 @@
 }
 
 .card-info-cont > h2 {
-  margin: 0;
-  font-size: 22px;
+  margin: 3px 0;
+  font-size: 18px;
   font-weight: 500;
+  text-transform: uppercase;
 }
 
 .card-info-cont > h3 {
   margin: 15px 0;
   font-size: 16px;
   font-weight: 500;
+  text-transform: uppercase;
 }
