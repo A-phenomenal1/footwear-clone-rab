@@ -22,6 +22,16 @@ function Home() {
       <Components.Carousel />
       <Components.Intro />
       <Components.ProductSection productType={productType} />
+      <div className="prod-cont">
+        <h1>Best Sellers</h1>
+        <div className="prod-items">
+          <Components.Card />
+          <Components.Card />
+          <Components.Card />
+          <Components.Card />
+          <Components.Card />
+        </div>
+      </div>
     </div>
   );
 }

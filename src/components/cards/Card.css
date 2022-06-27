@@ -1,0 +1,40 @@
+.card-cont {
+  display: flex;
+  width: auto;
+  height: 400px;
+  overflow: hidden;
+  flex-direction: column;
+  border: 1px solid lightgrey;
+}
+
+.card-img {
+  display: flex;
+  width: auto;
+  height: 65%;
+}
+
+.card-img > img {
+  display: flex;
+  width: 100%;
+}
+
+.card-info-cont {
+  display: flex;
+  width: auto;
+  height: 35%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-info-cont > h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.card-info-cont > h3 {
+  margin: 15px 0;
+  font-size: 16px;
+  font-weight: 500;
+}

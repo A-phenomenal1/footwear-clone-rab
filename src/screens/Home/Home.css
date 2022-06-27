@@ -1,0 +1,21 @@
+.prod-cont {
+  display: flex;
+  width: auto;
+  height: auto;
+  padding: 0 5%;
+  flex-direction: column;
+}
+
+.prod-cont > h1 {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.prod-items {
+  display: grid;
+  margin: 5% 0;
+  grid-row-gap: 2%;
+  grid-column-gap: 2%;
+  grid-template-columns: repeat(4, 1fr);
+}
