@@ -16,6 +16,34 @@ function Home() {
     },
   ];
 
+  const trustedPartners = [
+    {
+      img: "https://technext.github.io/footwear/images/brand-1.jpg",
+      altKey: "Adidas",
+      name: "Adidas",
+    },
+    {
+      img: "https://technext.github.io/footwear/images/brand-2.jpg",
+      altKey: "Nike",
+      name: "Nike",
+    },
+    {
+      img: "https://technext.github.io/footwear/images/brand-3.jpg",
+      altKey: "Gucci",
+      name: "Gucci",
+    },
+    {
+      img: "https://technext.github.io/footwear/images/brand-4.jpg",
+      altKey: "Merrell",
+      name: "Merrell",
+    },
+    {
+      img: "https://technext.github.io/footwear/images/brand-5.jpg",
+      altKey: "puma",
+      name: "puma",
+    },
+  ];
+
   return (
     <div>
       <Components.Navbar />
@@ -30,7 +58,17 @@ function Home() {
             return <Components.Card item={item} key={i} />;
           })}
         </div>
+        <button>See All Products</button>
       </div>
+      <div className="tp-cont">
+        <h1>Trusted Partners</h1>
+        <div className="tp-items">
+          {trustedPartners.map((item, i) => {
+            return <img src={item.img} alt={item.altKey} />;
+          })}
+        </div>
+      </div>
+      <Components.Footer />
     </div>
   );
 }

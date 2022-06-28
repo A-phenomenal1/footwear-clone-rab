@@ -1,6 +1,7 @@
 import { ProductIntro, Intro, ProductSection } from "./LowerPage/LowerPage";
 import { Navbar, SubNavbar } from "./Navbar/Navbar";
 import Carousel from "./carousel/Carousel";
+import Footer from "./footer/Footer";
 import Card from "./cards/Card";
 
 const Component = {
@@ -11,6 +12,7 @@ const Component = {
   SubNavbar,
   Carousel,
   Card,
+  Footer,
 };
 
 export default Component;

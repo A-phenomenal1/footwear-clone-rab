@@ -1,0 +1,42 @@
+.footer-cont {
+  display: flex;
+  width: auto;
+  height: auto;
+  padding: 0 5%;
+  margin-top: 6%;
+  flex-direction: column;
+  border: 1px solid red;
+}
+
+.footer-top {
+  display: grid;
+  width: auto;
+  height: auto;
+  grid-column-gap: 10px;
+  border: 1px solid green;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.footer-col {
+  display: grid;
+  width: 100%;
+  height: auto;
+  border: 1px solid yellow;
+}
+
+.footer-bottom {
+  display: flex;
+  width: 100%;
+  height: auto;
+  border: 1px solid blue;
+}
+
+.footer-bottom > h3 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size: 15px;
+  color: grey;
+  font-weight: 600;
+  text-align: center;
+}
