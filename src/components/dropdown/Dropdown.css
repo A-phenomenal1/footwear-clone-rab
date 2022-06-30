@@ -1,0 +1,32 @@
+.dd-cont {
+  display: flex;
+  width: 130px;
+  z-index: 1;
+  height: auto;
+  color: #ffffff;
+  margin-top: 35px;
+  margin-left: -50px;
+  position: absolute;
+  border-radius: 5px;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dd-top-arrow {
+  display: flex;
+  color: #000000;
+  margin-top: -13px;
+}
+
+.dd-items {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.dd-items > div {
+  display: flex;
+  padding: 3px;
+  justify-content: center;
+}

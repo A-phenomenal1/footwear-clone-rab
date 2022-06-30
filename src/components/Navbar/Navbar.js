@@ -4,6 +4,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
 import "./Navbar.css";
+import Dropdown from "../dropdown/Dropdown";
 
 export function SubNavbar() {
   const [index, setIndex] = useState(0);
@@ -66,6 +67,7 @@ export function Navbar() {
           </li>
           <li className="nav-item">
             <a>Men</a>
+            <Dropdown />
           </li>
           <li className="nav-item">
             <a>Women</a>

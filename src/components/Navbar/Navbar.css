@@ -78,7 +78,7 @@
   width: auto;
   height: 25%;
   padding: 0 5%;
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   justify-content: space-between;
 }
 
@@ -95,8 +95,13 @@
   display: flex;
   cursor: pointer;
   padding-right: 40px;
-  align-items: center;
-  /* border: 1px solid green; */
+  flex-direction: column;
+}
+
+.nav-item > a {
+  display: flex;
+  width: 100%;
+  margin: auto;
 }
 
 .nav-cartitems {
