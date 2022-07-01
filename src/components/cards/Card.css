@@ -35,8 +35,32 @@
 }
 
 .card-info-cont > h3 {
-  margin: 15px 0;
+  margin: 5px 0;
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
+}
+
+.card-btn {
+  display: flex;
+  width: auto;
+  height: auto;
+  border: none;
+  margin: 0 10px;
+  padding: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 10px;
+  justify-content: center;
+  background-color: rgba(23, 167, 167, 0.5);
+}
+
+.card-btn:active {
+  outline: none;
+}
+
+.card-btn:hover {
+  background-color: rgba(23, 167, 167, 0.7);
 }

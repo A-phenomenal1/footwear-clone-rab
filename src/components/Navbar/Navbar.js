@@ -3,8 +3,8 @@ import React, { useEffect, useRef, useState } from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
-import "./Navbar.css";
 import Dropdown from "../dropdown/Dropdown";
+import "./Navbar.css";
 
 export function SubNavbar() {
   const [index, setIndex] = useState(0);
@@ -38,10 +38,17 @@ export function SubNavbar() {
 }
 
 export function Navbar() {
-  // const [searchText, setSearchText] = useState("abc");
-
   const searchText = useRef("");
-  console.log("searchText: ", searchText);
+
+  const menItems = [
+    "Sports Shoes",
+    "Sneakers",
+    "Scandals",
+    "Slippers",
+    "Flip Flops",
+  ];
+
+  const womenItems = ["Sports Shoes", "Sneakers", "Scandals"];
 
   return (
     <div className="nav-header">
@@ -67,10 +74,15 @@ export function Navbar() {
           </li>
           <li className="nav-item">
             <a>Men</a>
-            <Dropdown />
+            <div className="nav-dropdown">
+              <Dropdown dropDown={menItems} />
+            </div>
           </li>
           <li className="nav-item">
             <a>Women</a>
+            <div className="nav-dropdown">
+              <Dropdown dropDown={womenItems} />
+            </div>
           </li>
           <li className="nav-item">
             <a>About</a>

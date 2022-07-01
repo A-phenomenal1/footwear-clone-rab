@@ -104,6 +104,18 @@
   margin: auto;
 }
 
+.nav-item:hover {
+  font-size: 15px;
+}
+
+.nav-dropdown {
+  display: none;
+}
+
+.nav-item:hover > .nav-dropdown {
+  display: block;
+}
+
 .nav-cartitems {
   display: flex;
   width: auto;

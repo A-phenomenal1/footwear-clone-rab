@@ -12,6 +12,7 @@ function Card(props) {
         <h2>Maca</h2>
         <h3>$139.00</h3>
       </div>
+      <button className="card-btn">Add to cart</button>
     </div>
   );
 }
