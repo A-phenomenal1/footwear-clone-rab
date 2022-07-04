@@ -4,7 +4,7 @@ import Components from "../../components";
 import items from "../../assets/items";
 import "./Home.css";
 
-function Home() {
+function Home(props) {
   const productType = [
     {
       src: "https://technext.github.io/footwear/images/men.jpg",
@@ -55,7 +55,18 @@ function Home() {
         <h1>Best Sellers</h1>
         <div className="prod-items">
           {items.map((item, i) => {
-            return <Components.Card item={item} key={i} />;
+            return (
+              <Components.Card
+                item={item}
+                key={item.id}
+                isPresent={props.cartItems.find(
+                  (cartItem) => item.id === cartItem.id
+                )}
+                updateCart={(item) =>
+                  props.updateCart([...props.updateCart, item])
+                }
+              />
+            );
           })}
         </div>
         <button>See All Products</button>

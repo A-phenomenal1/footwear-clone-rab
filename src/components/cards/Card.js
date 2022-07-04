@@ -8,11 +8,17 @@ function Card(props) {
         <img src={props.item.img} alt=" card-img" />
       </div>
       <div className="card-info-cont">
-        <h2>Women's boots shoes </h2>
-        <h2>Maca</h2>
-        <h3>$139.00</h3>
+        <h2>{props.item.title} </h2>
+        <h2>{props.item.brand}</h2>
+        <h3>{props.item.price}</h3>
       </div>
-      <button className="card-btn">Add to cart</button>
+      <button
+        className={props.isPresent ? "card-btn added-to-cart" : "card-btn"}
+        disabled={props.isPresent}
+        onClick={() => props.updateCart(props.item)}
+      >
+        {props.isPresent ? "Added into cart" : "Add to cart"}
+      </button>
     </div>
   );
 }
