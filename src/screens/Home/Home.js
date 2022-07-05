@@ -44,9 +44,21 @@ function Home(props) {
     },
   ];
 
+  const handleCartUpdate = (item, action) => {
+    let updatedCart;
+    if (action === "add") {
+      updatedCart = [...props.cartItems, item];
+    } else if (action === "remove") {
+      updatedCart = props.cartItems.filter(
+        (cartItem) => cartItem.id !== item.id
+      );
+    }
+    props.updateCart(updatedCart);
+  };
+
   return (
     <div>
-      <Components.Navbar />
+      <Components.Navbar cartCount={props.cartItems.length} />
       <Components.SubNavbar />
       <Components.Carousel />
       <Components.Intro />
@@ -62,9 +74,7 @@ function Home(props) {
                 isPresent={props.cartItems.find(
                   (cartItem) => item.id === cartItem.id
                 )}
-                updateCart={(item) =>
-                  props.updateCart([...props.updateCart, item])
-                }
+                updateCart={(item, action) => handleCartUpdate(item, action)}
               />
             );
           })}

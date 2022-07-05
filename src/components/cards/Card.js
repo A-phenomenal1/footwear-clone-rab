@@ -14,10 +14,11 @@ function Card(props) {
       </div>
       <button
         className={props.isPresent ? "card-btn added-to-cart" : "card-btn"}
-        disabled={props.isPresent}
-        onClick={() => props.updateCart(props.item)}
+        onClick={() =>
+          props.updateCart(props.item, props.isPresent ? "remove" : "add")
+        }
       >
-        {props.isPresent ? "Added into cart" : "Add to cart"}
+        {props.isPresent ? "Remove from cart" : "Add to cart"}
       </button>
     </div>
   );

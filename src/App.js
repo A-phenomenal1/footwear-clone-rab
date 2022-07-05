@@ -5,15 +5,7 @@ import "./App.css";
 import Screens from "./screens";
 
 function App() {
-  const [cartItems, setCartItems] = useState([
-    {
-      id: 5,
-      img: "https://technext.github.io/footwear/images/item-6.jpg",
-      title: "Women's boots shoes",
-      brand: "Maca",
-      price: "$139.00",
-    },
-  ]);
+  const [cartItems, setCartItems] = useState([]);
 
   useEffect(() => {
     console.log("cartItems: ", cartItems);

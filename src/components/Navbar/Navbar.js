@@ -37,8 +37,9 @@ export function SubNavbar() {
   );
 }
 
-export function Navbar() {
+export function Navbar(props) {
   const searchText = useRef("");
+  console.log(props.cartCount);
 
   const menItems = [
     "Sports Shoes",
@@ -93,7 +94,7 @@ export function Navbar() {
         </ul>
         <div className="nav-cartitems">
           <ShoppingCartIcon />
-          <span>Cart [0]</span>
+          <span>Cart [{props.cartCount}]</span>
         </div>
       </div>
     </div>
