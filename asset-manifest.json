@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/footwear-clone-rab/static/css/main.857ab82b.css",
+    "main.js": "/footwear-clone-rab/static/js/main.aec331d5.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/footwear-clone-rab/static/js/787.c4e7f8f9.chunk.js",
+    "index.html": "/footwear-clone-rab/index.html",
+    "main.857ab82b.css.map": "/footwear-clone-rab/static/css/main.857ab82b.css.map",
+    "main.aec331d5.js.map": "/footwear-clone-rab/static/js/main.aec331d5.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/footwear-clone-rab/static/js/787.c4e7f8f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.857ab82b.css",
+    "static/js/main.aec331d5.js"
+  ]
+}
