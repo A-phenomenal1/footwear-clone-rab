@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/footwear-clone-rab/static/css/main.857ab82b.css",
-    "main.js": "/footwear-clone-rab/static/js/main.aec331d5.js",
-    "static/js/787.c4e7f8f9.chunk.js": "/footwear-clone-rab/static/js/787.c4e7f8f9.chunk.js",
-    "index.html": "/footwear-clone-rab/index.html",
-    "main.857ab82b.css.map": "/footwear-clone-rab/static/css/main.857ab82b.css.map",
-    "main.aec331d5.js.map": "/footwear-clone-rab/static/js/main.aec331d5.js.map",
-    "787.c4e7f8f9.chunk.js.map": "/footwear-clone-rab/static/js/787.c4e7f8f9.chunk.js.map"
+    "main.css": "/Footwear-clone-rhcb/static/css/main.857ab82b.css",
+    "main.js": "/Footwear-clone-rhcb/static/js/main.a6f102ce.js",
+    "static/js/787.c4e7f8f9.chunk.js": "/Footwear-clone-rhcb/static/js/787.c4e7f8f9.chunk.js",
+    "index.html": "/Footwear-clone-rhcb/index.html",
+    "main.857ab82b.css.map": "/Footwear-clone-rhcb/static/css/main.857ab82b.css.map",
+    "main.a6f102ce.js.map": "/Footwear-clone-rhcb/static/js/main.a6f102ce.js.map",
+    "787.c4e7f8f9.chunk.js.map": "/Footwear-clone-rhcb/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.857ab82b.css",
-    "static/js/main.aec331d5.js"
+    "static/js/main.a6f102ce.js"
   ]
 }
